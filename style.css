@@ -1,0 +1,12 @@
+/* --- Animation Base State (Hidden) --- */
+.about, .skills, .projects, .contact {
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px below its final position */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* --- Animation Active State (Visible) --- */
+.show-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
